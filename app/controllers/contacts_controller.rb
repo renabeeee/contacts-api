@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
   end
 
   def print_all_contacts
-    contact = Contact.all
-    render json: contact.as_json
+    contacts = Contact.all
+    render json: contacts.as_json
   end
 end
