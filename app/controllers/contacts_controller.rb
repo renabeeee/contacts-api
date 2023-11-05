@@ -9,4 +9,9 @@ class ContactsController < ApplicationController
     contacts = Contact.all
     render json: contacts.as_json
   end
+
+  def print_all_contacts
+    contacts = Contact.all
+    render json: contacts.as_json
+  end
 end
